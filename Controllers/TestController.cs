@@ -83,6 +83,7 @@ public class TestController : ControllerBase
     {
         try
     {
+        int i = 3/0;
         var projects = new List<TestProjects>();
         using var conn = new NpgsqlConnection(_connectionString);
         await conn.OpenAsync();
